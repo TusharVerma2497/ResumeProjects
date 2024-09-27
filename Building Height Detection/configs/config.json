@@ -1,0 +1,83 @@
+{
+    "model": {
+        "encoder": {
+            "unet_filters": [64, 128, 256, 512, 512],
+            "pooling": "max",
+            "in_channels": 3,
+            "ASSP": {
+                "kernel_size":5,
+                "SEOperator": false,
+                "dilation_layers": [
+                    [[1, 2, 4, 7]],
+                    [[1, 2, 4, 7]],
+                    [[1, 2, 4]],
+                    [[1, 2, 4]],
+                    [[1, 2]]
+                ]
+            }
+        },
+        "decoder": {
+            "tracks": [
+                {
+                    "tag": "segmentation",
+                    "produce": ["refined_shadow", "footprint"],
+                    "self_attention": true,
+                    "final_activation": "steep_sigmoid",
+                    "cross_attention": []
+                },
+                {
+                    "tag": "regression",
+                    "produce": ["dsm"],
+                    "self_attention": true,
+                    "final_activation": "relu",
+                    "cross_attention": [{"query": "regression", "key":"segmentation", "value":"segmentation", "window_size": [4,4,8,16,20] }]
+                }
+            ]
+        }
+    },
+    "training": {
+        "dynamic_loss_balancing": true,
+        "multi_scale_training": false,
+        "task_priority": {
+            "dsm": 0.50,
+            "refined_shadow": 0.25,
+            "footprint":0.25
+        },
+        "loss_function": {
+            "dsm": "GradientDiceL1",
+            "refined_shadow": "DiceGradient",
+            "footprint": "DiceGradient"
+        },
+        "device": "cuda",
+        "checkpoint_folder": "saved_states",
+        "load_checkpoint_file": "",
+        "epochs": 200,
+        "logs_folder": "logs",
+        "optimizer": {
+            "type": "AdamW",
+            "learning_rate": 0.001,
+            "weight_decay": 0.0005
+        }
+    },
+    "dataset": {
+        "GRSS_rootPath": "/home/nximish/Uncertainity_height_estimate/Data/track2/train/",
+        "seamCarving_rootPath": [
+            "/home/nximish/Building_height_estimate/Data/track2/train/100SeamRemoved/",
+            "/home/nximish/Building_height_estimate/Data/track2/train/150SeamRemoved/"
+        ],
+        "Delhi_rootPath": "/home/nximish/footprint_extraction/",
+        "Delhi_json": "data/filteredSamplesDelhi_threshold=0.1.json",
+        "num_delhi_files_for_training": 6000,
+        "include_seam_carving": true,
+        "color_jitter": false,
+        "loader":{
+            "seed": 42,
+            "batch_size": 16,
+            "split": {
+                "train": 0.8,
+                "test": 0.1,
+                "val": 0.1
+            }
+        }
+    }
+}
