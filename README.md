@@ -19,9 +19,11 @@
 
 <img src="2. Context Aware Image Resizing/Seam_Carving.gif" alt="Result Image" style="display:block; margin:auto;"/>
 
-#
-#
-#
+<br>
+<br>
+<br>
+<br>
+
 # MINI PROJECTS
 
 ## GAN
@@ -166,9 +168,11 @@ Grayscale image after color transfer.
     <td>Grayscale image after color transfer.</td>
 </table>
 
-#
-#
-#
+<br>
+<br>
+<br>
+<br>
+
 # ASSIGNMENTS
 
 <p><b>Implementing Linear Regression, Logistic Regression, GDA.<b> 
