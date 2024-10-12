@@ -135,10 +135,16 @@ Focuses on analyzing a mechanism for rendering output through image quantization
 The assignment requires implementing both the median-cut algorithm and Floyd-Steinberg dithering from scratch, avoiding the use of direct built-in functions. The median-cut quantization is approached using a divide-and-conquer strategy. 
 
 The result below shows 12 bit quantization of the original 24 bit image.
-<div style="display: flex; justify-content: center;">
+<!-- <div style="display: flex; justify-content: center;">
     <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/Artistic_img.jpg" alt="Result Image 1" style="margin: 0 10px;width:50%"/>
     <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/quantization12colors.png" alt="Result Image 2" style="margin: 0 10px; width:50%"/>
-</div>
+</div> -->
+<table style="text-align: center;">
+    <tr>
+    <td><img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/Artistic_img.jpg" alt="Result Image 1" style="margin: 0 10px;width:100%"/></td>
+    <td><img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/quantization12colors.png" alt="Result Image 2" style="margin: 0 10px; width:100%"/></td>
+    </tr>
+</table>
 
 #### Part 3
 This part focuses on transferring color from a source image to a grayscale image using swatches. The objective is to utilize the similar intensity values between the source and target images within the respective swatches to effectively paint the entire target image. 
@@ -148,11 +154,17 @@ A basic GUI application was developed to effectively select n swatches from both
 <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/swatches.png" alt="Result Image" style="display:block; margin:auto;"/>
 Swatch Selection
 
-</div>
+<!-- </div>
 <div style="margin: auto;width:50%; text-align:center;">
 <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/colorTransferred.png" alt="Result Image" />
 Grayscale image after color transfer.
-</div>
+</div> -->
+<table style="text-align: center;">
+    <tr>
+    <td><img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/colorTransferred.png" alt="Result Image 1" style="margin: 0 10px;width:60%"/></td>
+    </tr>
+    <td>Grayscale image after color transfer.</td>
+</table>
 
 #
 #
