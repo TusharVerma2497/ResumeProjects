@@ -117,10 +117,16 @@ The goal was to transform real photos into non-photorealistic, painting-like ima
 </ul></p>
 
 
-<div style="display: flex; justify-content: center;">
+<!-- <div style="display: flex; justify-content: center;">
     <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/input_img.jpg" alt="Result Image 1" style="margin: 0 10px; width:50%"/>
     <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/Artistic_img.jpg" alt="Result Image 2" style="margin: 0 10px;width:50%"/>
-</div>
+</div> -->
+<table style="text-align: center;">
+    <tr>
+    <td><img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/input_img.jpg" alt="Result Image 1" style="margin: 0 10px; width:100%"/></td>
+    <td><img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/Artistic_img.jpg" alt="Result Image 2" style="margin: 0 10px;width:100%"/></td>
+    </tr>
+</table>
 
 #
 #### Part 2 
