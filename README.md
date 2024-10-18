@@ -167,7 +167,14 @@ Grayscale image after color transfer.
     </tr>
     <td>Grayscale image after color transfer.</td>
 </table>
+</div>
 
+### Neural Style Transfer
+
+Neural Style Transfer (NST) is a technique in computer vision that combines the content of one image with the artistic style of another, producing a new image that retains the original content's structure while adopting stylistic elements. In this part, I also implemented NST from scratch using a pre-trained convolutional neural network (CNN), specifically VGG16. They extracted content features from the higher layers of the network and style features from the lower layers. The process involved optimizing a randomly initialized image by minimizing a loss function that balances content and style differences. 
+
+Below is the result of performing the Iterative SGD version of Neural Style Transfer.
+<img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/src/Neural Style Transfer/animation.gif" alt="Result Image" style="display:block; margin:auto;"/>
 <br>
 <br>
 <br>
