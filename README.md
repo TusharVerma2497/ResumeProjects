@@ -175,6 +175,11 @@ Neural Style Transfer (NST) is a technique in computer vision that combines the 
 
 Below is the result of performing the Iterative SGD version of Neural Style Transfer.
 <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/src/Neural Style Transfer/animation.gif" alt="Result Image" style="display:block; margin:auto;"/>
+
+
+The name indicates that this method is tailored for neural style transfer by carefully balancing content and style loss to achieve a harmonious blend. Below is an example of Neural Style Transfer, demonstrating how artistic elements from a source image (e.g., Starry Night) can be transferred onto a grayscale version of Girl with a Pearl Earring. This process results in an intriguing fusion, combining the iconic texture and patterns of Starry Night with the subject and composition of Vermeer’s classic painting, creating a unique and compelling hybrid artwork.
+<img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/src/Neural Style Transfer/example2.png" alt="Result Image" style="display:block; margin:auto;"/>
+<img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/src/Neural Style Transfer/animation2.gif" alt="Result Image" style="display:block; margin:auto;"/>
 <br>
 <br>
 <br>
