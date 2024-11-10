@@ -42,7 +42,9 @@ Using adversarial learning, we trained a conditional GAN on the Mini-ImageNet da
 To help the network capture contextual information during colorization, random patch removal was introduced during training. This technique encourages the model to infer missing information from surrounding areas, enhancing its ability to generate coherent and contextually accurate colors.
 
 Below is the result of Neural Colorization.
-<img src="3. Mini Projects/Neural Colorization/results.png" alt="Result Image" style="display:block; margin:auto;"/>
+
+<img src="3. Mini Projects/Neural Colorization/colorization1.png" alt="Result Image" style="display:block; margin:auto;"/>
+<img src="3. Mini Projects/Neural Colorization/colorization2.png" alt="Result Image" style="display:block; margin:auto;"/>
 
 
 ## Super-Resolution
@@ -60,6 +62,7 @@ Neural Style Transfer (NST) is a technique in computer vision that combines the 
  Below is an example of Neural Style Transfer, demonstrating how artistic elements from a source image (e.g., Starry Night) can be transferred onto a grayscale version of Girl with a Pearl Earring. This process results in an intriguing fusion, combining the iconic texture and patterns of Starry Night with the subject and composition of Vermeer’s classic painting, creating a unique and compelling hybrid artwork.
 
 <img src="3. Mini Projects/Neural Style Transfer/example2.png" alt="Result Image" style="display:block; margin:auto;"/>
+</br>
 <img src="3. Mini Projects/Neural Style Transfer/animation2.gif" alt="Result Image" style="display:block; margin:auto;"/>
 
 ## Inversion and Adverserial Attack
@@ -175,24 +178,13 @@ This part focuses on transferring color from a source image to a grayscale image
 A basic GUI application was developed to effectively select n swatches from both the source and the target image as shown below.
 <div style="text-align:center;">
 <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/swatches.png" alt="Result Image" style="display:block; margin:auto;"/>
-Swatch Selection
-
-<!-- </div>
-<div style="margin: auto;width:50%; text-align:center;">
-<img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/colorTransferred.png" alt="Result Image" />
-Grayscale image after color transfer.
-</div> -->
-<table style="text-align: center;">
-    <tr>
-    <td><img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/colorTransferred.png" alt="Result Image 1" style="margin: 0 10px;width:60%"/></td>
-    </tr>
-    <td>Grayscale image after color transfer.</td>
-</table>
-</div>
-
+</br>
+Below is the result of performing color tranfer using swatches.
+<img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/colorTransferred.png" alt="Result Image 1" style="display:block; margin:auto;"/>
+</br>
 Below is the result of performing the Iterative SGD version of Neural Style Transfer on 'Girl with a Pearl Earring' painting.
 <img src="3. Mini Projects/Neural Style Transfer/animation.gif" alt="Result Image" style="display:block; margin:auto;"/>
-
+</br>
 Below is the result of Colorizing the gray version of the 'Girl with a Pearl Earring' with Neural Colorization.
 <img src="3. Mini Projects/Neural Colorization/example2.png" alt="Result Image" style="display:block; margin:auto;"/>
 <br>
