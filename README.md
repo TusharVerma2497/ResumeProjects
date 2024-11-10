@@ -17,7 +17,7 @@
 
 <!-- #### Result Image -->
 
-<img src="2. Context Aware Image Resizing/Seam_Carving.gif" alt="Result Image" style="display:block; margin:auto;"/>
+<img src="2. Context Aware Image Resizing/Seam_Carving.webp" alt="Result Image" style="display:block; margin:auto;"/>
 
 <br>
 <br>
@@ -31,7 +31,7 @@
 
 <!-- ### Result Image -->
 
-<img src="3. Mini Projects/GAN/GAN Adversarial_Learning.gif" alt="Result Image" style="display:block; margin:auto;"/>
+<img src="3. Mini Projects/GAN/GAN Adversarial_Learning.webp" alt="Result Image" style="display:block; margin:auto;"/>
 
 
 ## Neural Colorization (gray to color image)
@@ -181,13 +181,13 @@ A basic GUI application was developed to effectively select n swatches from both
 <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/colorTransferred.jpg" alt="Result Image 1" style="display:block; margin:auto;"/>
 </br>
 
-<p>Below is the result of performing the Iterative SGD version of Neural Style Transfer on 'Girl with a Pearl Earring' painting.</p>
-<img src="3. Mini Projects/Neural Style Transfer/animation.gif" alt="Result Image" style="display:block; margin:auto;"/>
+<p>Below is the result of Colorizing the gray version of the 'Girl with a Pearl Earring' with Neural Colorization.</p>
+<img src="3. Mini Projects/Neural Colorization/example2.jpg" alt="Result Image" style="display:block; margin:auto;"/>
 </br>
 
-<p>Below is the result of Colorizing the gray version of the 'Girl with a Pearl Earring' with Neural Colorization.</p>
-
-<img src="3. Mini Projects/Neural Colorization/example2.jpg" alt="Result Image" style="display:block; margin:auto;"/>
+<p>Below is the result of performing the Iterative SGD version of Neural Style Transfer on 'Girl with a Pearl Earring' painting.</p>
+<img src="3. Mini Projects/Neural Style Transfer/animation.webp" alt="Result Image" style="display:block; margin:auto;"/>
+</br>
 <br>
 <br>
 <br>
