@@ -7,7 +7,7 @@
 
 <!-- #### Result Image -->
 
-<img src="1. Building Height Detection/Delhi_Estimates.png" alt="Result Image" style="display:block; margin:auto;"/>
+<img src="1. Building Height Detection/Delhi_Estimates.jpg" alt="Result Image" style="display:block; margin:auto;"/>
 
 
 #
@@ -43,8 +43,8 @@ To help the network capture contextual information during colorization, random p
 
 Below is the result of Neural Colorization.
 
-<img src="3. Mini Projects/Neural Colorization/colorization1.png" alt="Result Image" style="display:block; margin:auto;"/>
-<img src="3. Mini Projects/Neural Colorization/colorization2.png" alt="Result Image" style="display:block; margin:auto;"/>
+<img src="3. Mini Projects/Neural Colorization/colorization1.jpg" alt="Result Image" style="display:block; margin:auto;"/>
+<img src="3. Mini Projects/Neural Colorization/colorization2.jpg" alt="Result Image" style="display:block; margin:auto;"/>
 
 
 ## Super-Resolution
@@ -52,7 +52,7 @@ Below is the result of Neural Colorization.
 
 <!-- ### Result Image -->
 
-<img src="3. Mini Projects/Super-Resolution/SRGAN_results.png" alt="Result Image" style="display:block; margin: -10% auto 0; transform: rotate(90deg);width: 60%;"/>
+<img src="3. Mini Projects/Super-Resolution/SRGAN_results.jpg" alt="Result Image" style="display:block; margin: -10% auto 0; transform: rotate(90deg);width: 60%;"/>
 
 
 ## Neural Style Transfer
@@ -61,7 +61,7 @@ Neural Style Transfer (NST) is a technique in computer vision that combines the 
 
  Below is an example of Neural Style Transfer, demonstrating how artistic elements from a source image (e.g., Starry Night) can be transferred onto a grayscale version of Girl with a Pearl Earring. This process results in an intriguing fusion, combining the iconic texture and patterns of Starry Night with the subject and composition of Vermeer’s classic painting, creating a unique and compelling hybrid artwork.
 
-<img src="3. Mini Projects/Neural Style Transfer/example2.png" alt="Result Image" style="display:block; margin:auto;"/>
+<img src="3. Mini Projects/Neural Style Transfer/example2.jpg" alt="Result Image" style="display:block; margin:auto;"/>
 </br>
 <img src="3. Mini Projects/Neural Style Transfer/animation2.gif" alt="Result Image" style="display:block; margin:auto;"/>
 
@@ -161,14 +161,10 @@ Focuses on analyzing a mechanism for rendering output through image quantization
 The assignment requires implementing both the median-cut algorithm and Floyd-Steinberg dithering from scratch, avoiding the use of direct built-in functions. The median-cut quantization is approached using a divide-and-conquer strategy. 
 
 The result below shows 12 bit quantization of the original 24 bit image.
-<!-- <div style="display: flex; justify-content: center;">
-    <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/Artistic_img.jpg" alt="Result Image 1" style="margin: 0 10px;width:50%"/>
-    <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/quantization12colors.png" alt="Result Image 2" style="margin: 0 10px; width:50%"/>
-</div> -->
 <table style="text-align: center;">
     <tr>
     <td><img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/Artistic_img.jpg" alt="Result Image 1" style="margin: 0 10px;width:100%"/></td>
-    <td><img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/quantization12colors.png" alt="Result Image 2" style="margin: 0 10px; width:100%"/></td>
+    <td><img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/quantization12colors.jpg" alt="Result Image 2" style="margin: 0 10px; width:100%"/></td>
     </tr>
 </table>
 
@@ -178,11 +174,11 @@ This part focuses on transferring color from a source image to a grayscale image
 A basic GUI application was developed to effectively select n swatches from both the source and the target image as shown below.
 
 <div style="text-align:center;">
-<img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/swatches.png" alt="Result Image" style="display:block; margin:auto;"/>
+<img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/swatches.jpg" alt="Result Image" style="display:block; margin:auto;"/>
 </br>
 
 <p>Below is the result of performing color tranfer using swatches.</p>
-<img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/colorTransferred.png" alt="Result Image 1" style="display:block; margin:auto;"/>
+<img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/colorTransferred.jpg" alt="Result Image 1" style="display:block; margin:auto;"/>
 </br>
 
 <p>Below is the result of performing the Iterative SGD version of Neural Style Transfer on 'Girl with a Pearl Earring' painting.</p>
@@ -191,7 +187,7 @@ A basic GUI application was developed to effectively select n swatches from both
 
 <p>Below is the result of Colorizing the gray version of the 'Girl with a Pearl Earring' with Neural Colorization.</p>
 
-<img src="3. Mini Projects/Neural Colorization/example2.png" alt="Result Image" style="display:block; margin:auto;"/>
+<img src="3. Mini Projects/Neural Colorization/example2.jpg" alt="Result Image" style="display:block; margin:auto;"/>
 <br>
 <br>
 <br>
