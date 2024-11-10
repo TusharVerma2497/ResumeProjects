@@ -180,15 +180,16 @@ A basic GUI application was developed to effectively select n swatches from both
 <div style="text-align:center;">
 <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/swatches.png" alt="Result Image" style="display:block; margin:auto;"/>
 </br>
-Below is the result of performing color tranfer using swatches.
 
+<p>Below is the result of performing color tranfer using swatches.</p>
 <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/colorTransferred.png" alt="Result Image 1" style="display:block; margin:auto;"/>
 </br>
-Below is the result of performing the Iterative SGD version of Neural Style Transfer on 'Girl with a Pearl Earring' painting.
 
+<p>Below is the result of performing the Iterative SGD version of Neural Style Transfer on 'Girl with a Pearl Earring' painting.</p>
 <img src="3. Mini Projects/Neural Style Transfer/animation.gif" alt="Result Image" style="display:block; margin:auto;"/>
 </br>
-Below is the result of Colorizing the gray version of the 'Girl with a Pearl Earring' with Neural Colorization.
+
+<p>Below is the result of Colorizing the gray version of the 'Girl with a Pearl Earring' with Neural Colorization.</p>
 
 <img src="3. Mini Projects/Neural Colorization/example2.png" alt="Result Image" style="display:block; margin:auto;"/>
 <br>
