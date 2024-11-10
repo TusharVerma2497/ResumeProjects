@@ -169,17 +169,31 @@ Grayscale image after color transfer.
 </table>
 </div>
 
-### Neural Style Transfer
+## Neural Style Transfer
 
 Neural Style Transfer (NST) is a technique in computer vision that combines the content of one image with the artistic style of another, producing a new image that retains the original content's structure while adopting stylistic elements. In this part, I also implemented NST from scratch using a pre-trained convolutional neural network (CNN), specifically VGG16. They extracted content features from the higher layers of the network and style features from the lower layers. The process involved optimizing a randomly initialized image by minimizing a loss function that balances content and style differences. 
 
 Below is the result of performing the Iterative SGD version of Neural Style Transfer.
-<img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/src/Neural Style Transfer/animation.gif" alt="Result Image" style="display:block; margin:auto;"/>
+<img src="3. Mini Projects/Neural Style Transfer/animation.gif" alt="Result Image" style="display:block; margin:auto;"/>
 
 
-The name indicates that this method is tailored for neural style transfer by carefully balancing content and style loss to achieve a harmonious blend. Below is an example of Neural Style Transfer, demonstrating how artistic elements from a source image (e.g., Starry Night) can be transferred onto a grayscale version of Girl with a Pearl Earring. This process results in an intriguing fusion, combining the iconic texture and patterns of Starry Night with the subject and composition of Vermeer’s classic painting, creating a unique and compelling hybrid artwork.
-<img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/src/Neural Style Transfer/example2.png" alt="Result Image" style="display:block; margin:auto;"/>
-<img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/src/Neural Style Transfer/animation2.gif" alt="Result Image" style="display:block; margin:auto;"/>
+As the name suggests, this method is tailored for neural style transfer by carefully balancing content and style loss to achieve a harmonious blend. Below is an example of Neural Style Transfer, demonstrating how artistic elements from a source image (e.g., Starry Night) can be transferred onto a grayscale version of Girl with a Pearl Earring. This process results in an intriguing fusion, combining the iconic texture and patterns of Starry Night with the subject and composition of Vermeer’s classic painting, creating a unique and compelling hybrid artwork.
+<img src="3. Mini Projects/Neural Style Transfer/example2.png" alt="Result Image" style="display:block; margin:auto;"/>
+<img src="3. Mini Projects/Neural Style Transfer/animation2.gif" alt="Result Image" style="display:block; margin:auto;"/>
+
+
+## Neural Colorization (gray to color image)
+Neural colorization is a technique that uses neural networks, particularly convolutional neural networks (CNNs), to add color to grayscale images. Instead of manually adding color, the network learns to predict and generate realistic color distributions based on patterns, textures, and context within the image. 
+
+Using adversarial learning, we trained a conditional GAN on the Mini-ImageNet dataset. The generator is a U-Net model that colorizes grayscale images, conditioned on luminance values. It downscales and then upscales the image, with skip connections to retain spatial details, and includes self-attention in the decoder to capture long-range dependencies for more coherent colorization. The discriminator is a binary classifier that distinguishes real color images from generated ones, using downsampling convolutional layers to identify inconsistencies.
+
+To help the network capture contextual information during colorization, random patch removal was introduced during training. This technique encourages the model to infer missing information from surrounding areas, enhancing its ability to generate coherent and contextually accurate colors.
+
+Below is the result of Neural Colorization.
+<img src="3. Mini Projects/Neural Colorization/results.png" alt="Result Image" style="display:block; margin:auto;"/>
+
+Colorizing the gray version of the 'Girl with a Pearl Earring' painting
+<img src="3. Mini Projects/Neural Colorization/example2.png" alt="Result Image" style="display:block; margin:auto;"/>
 <br>
 <br>
 <br>
