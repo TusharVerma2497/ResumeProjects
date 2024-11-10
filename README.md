@@ -33,6 +33,18 @@
 
 <img src="3. Mini Projects/GAN/GAN Adversarial_Learning.gif" alt="Result Image" style="display:block; margin:auto;"/>
 
+
+## Neural Colorization (gray to color image)
+Neural colorization is a technique that uses neural networks, particularly convolutional neural networks (CNNs), to add color to grayscale images. Instead of manually adding color, the network learns to predict and generate realistic color distributions based on patterns, textures, and context within the image. 
+
+Using adversarial learning, we trained a conditional GAN on the Mini-ImageNet dataset. The generator is a U-Net model that colorizes grayscale images, conditioned on luminance values. It downscales and then upscales the image, with skip connections to retain spatial details, and includes self-attention in the decoder to capture long-range dependencies for more coherent colorization. The discriminator is a binary classifier that distinguishes real color images from generated ones, using downsampling convolutional layers to identify inconsistencies.
+
+To help the network capture contextual information during colorization, random patch removal was introduced during training. This technique encourages the model to infer missing information from surrounding areas, enhancing its ability to generate coherent and contextually accurate colors.
+
+Below is the result of Neural Colorization.
+<img src="3. Mini Projects/Neural Colorization/results.png" alt="Result Image" style="display:block; margin:auto;"/>
+
+
 ## Super-Resolution
 <p> In this project, a Super Resolution Generative Adversarial Network (SRGAN) was implemented to upsample satellite images. The model enhances image resolution while preserving texture and detail. The architecture consists of a generator using convolutional layers and residual blocks for upsampling and a discriminator that classifies images as real or fake. Loss functions like adversarial, perceptual, and total variation losses were combined to improve image quality. The SRGAN effectively generates high-resolution satellite images, enabling better interpretation of geographical features and improving the utility of satellite data.<br><a href="3. Mini Projects/Super-Resolution/Report.pdf">Report</a></p>
 
@@ -40,6 +52,15 @@
 
 <img src="3. Mini Projects/Super-Resolution/SRGAN_results.png" alt="Result Image" style="display:block; margin: -10% auto 0; transform: rotate(90deg);width: 60%;"/>
 
+
+## Neural Style Transfer
+
+Neural Style Transfer (NST) is a technique in computer vision that combines the content of one image with the artistic style of another, producing a new image that retains the original content's structure while adopting stylistic elements. In this part, I also implemented NST from scratch using a pre-trained convolutional neural network (CNN), specifically VGG16. They extracted content features from the higher layers of the network and style features from the lower layers. The process involved optimizing a randomly initialized image by minimizing a loss function that balances content and style differences. 
+
+ Below is an example of Neural Style Transfer, demonstrating how artistic elements from a source image (e.g., Starry Night) can be transferred onto a grayscale version of Girl with a Pearl Earring. This process results in an intriguing fusion, combining the iconic texture and patterns of Starry Night with the subject and composition of Vermeer’s classic painting, creating a unique and compelling hybrid artwork.
+
+<img src="3. Mini Projects/Neural Style Transfer/example2.png" alt="Result Image" style="display:block; margin:auto;"/>
+<img src="3. Mini Projects/Neural Style Transfer/animation2.gif" alt="Result Image" style="display:block; margin:auto;"/>
 
 ## Inversion and Adverserial Attack
 <p> This project demonstrates neural network inversion and adversarial attacks on the MNIST dataset. It utilizes a simple sigmoid-based convolutional neural network (CNN) model trained on this dataset. The project employs image inversion through gradient descent to reconstruct input images that yield desired outputs from the model. Additionally, it showcases a targeted adversarial attack, where images are manipulated to resemble a specific target class, fooling the model into consistently predicting this class. The effectiveness of the attack is evaluated using a confusion matrix, highlighting the model's vulnerabilities.<br><a href="3. Mini Projects/Inversion and Adverserial Attack/Report.pdf">Report</a></p>
@@ -169,30 +190,10 @@ Grayscale image after color transfer.
 </table>
 </div>
 
-## Neural Style Transfer
-
-Neural Style Transfer (NST) is a technique in computer vision that combines the content of one image with the artistic style of another, producing a new image that retains the original content's structure while adopting stylistic elements. In this part, I also implemented NST from scratch using a pre-trained convolutional neural network (CNN), specifically VGG16. They extracted content features from the higher layers of the network and style features from the lower layers. The process involved optimizing a randomly initialized image by minimizing a loss function that balances content and style differences. 
-
-Below is the result of performing the Iterative SGD version of Neural Style Transfer.
+Below is the result of performing the Iterative SGD version of Neural Style Transfer on 'Girl with a Pearl Earring' painting.
 <img src="3. Mini Projects/Neural Style Transfer/animation.gif" alt="Result Image" style="display:block; margin:auto;"/>
 
-
-As the name suggests, this method is tailored for neural style transfer by carefully balancing content and style loss to achieve a harmonious blend. Below is an example of Neural Style Transfer, demonstrating how artistic elements from a source image (e.g., Starry Night) can be transferred onto a grayscale version of Girl with a Pearl Earring. This process results in an intriguing fusion, combining the iconic texture and patterns of Starry Night with the subject and composition of Vermeer’s classic painting, creating a unique and compelling hybrid artwork.
-<img src="3. Mini Projects/Neural Style Transfer/example2.png" alt="Result Image" style="display:block; margin:auto;"/>
-<img src="3. Mini Projects/Neural Style Transfer/animation2.gif" alt="Result Image" style="display:block; margin:auto;"/>
-
-
-## Neural Colorization (gray to color image)
-Neural colorization is a technique that uses neural networks, particularly convolutional neural networks (CNNs), to add color to grayscale images. Instead of manually adding color, the network learns to predict and generate realistic color distributions based on patterns, textures, and context within the image. 
-
-Using adversarial learning, we trained a conditional GAN on the Mini-ImageNet dataset. The generator is a U-Net model that colorizes grayscale images, conditioned on luminance values. It downscales and then upscales the image, with skip connections to retain spatial details, and includes self-attention in the decoder to capture long-range dependencies for more coherent colorization. The discriminator is a binary classifier that distinguishes real color images from generated ones, using downsampling convolutional layers to identify inconsistencies.
-
-To help the network capture contextual information during colorization, random patch removal was introduced during training. This technique encourages the model to infer missing information from surrounding areas, enhancing its ability to generate coherent and contextually accurate colors.
-
-Below is the result of Neural Colorization.
-<img src="3. Mini Projects/Neural Colorization/results.png" alt="Result Image" style="display:block; margin:auto;"/>
-
-Colorizing the gray version of the 'Girl with a Pearl Earring' painting
+Below is the result of Colorizing the gray version of the 'Girl with a Pearl Earring' with Neural Colorization.
 <img src="3. Mini Projects/Neural Colorization/example2.png" alt="Result Image" style="display:block; margin:auto;"/>
 <br>
 <br>
