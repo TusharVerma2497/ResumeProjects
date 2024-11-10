@@ -176,16 +176,20 @@ The result below shows 12 bit quantization of the original 24 bit image.
 This part focuses on transferring color from a source image to a grayscale image using swatches. The objective is to utilize the similar intensity values between the source and target images within the respective swatches to effectively paint the entire target image. 
 
 A basic GUI application was developed to effectively select n swatches from both the source and the target image as shown below.
+
 <div style="text-align:center;">
 <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/swatches.png" alt="Result Image" style="display:block; margin:auto;"/>
 </br>
 Below is the result of performing color tranfer using swatches.
+
 <img src="3. Mini Projects/Artistic Image Enhancement and Style Transfer, Image Quantization/colorTransferred.png" alt="Result Image 1" style="display:block; margin:auto;"/>
 </br>
 Below is the result of performing the Iterative SGD version of Neural Style Transfer on 'Girl with a Pearl Earring' painting.
+
 <img src="3. Mini Projects/Neural Style Transfer/animation.gif" alt="Result Image" style="display:block; margin:auto;"/>
 </br>
 Below is the result of Colorizing the gray version of the 'Girl with a Pearl Earring' with Neural Colorization.
+
 <img src="3. Mini Projects/Neural Colorization/example2.png" alt="Result Image" style="display:block; margin:auto;"/>
 <br>
 <br>
