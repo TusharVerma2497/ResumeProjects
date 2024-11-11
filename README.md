@@ -65,65 +65,6 @@ Neural Style Transfer (NST) is a technique in computer vision that combines the 
 </br>
 <img src="3. Mini Projects/Neural Style Transfer/animation2.gif" alt="Result Image" style="display:block; margin:auto;"/>
 
-## Inversion and Adverserial Attack
-<p> This project demonstrates neural network inversion and adversarial attacks on the MNIST dataset. It utilizes a simple sigmoid-based convolutional neural network (CNN) model trained on this dataset. The project employs image inversion through gradient descent to reconstruct input images that yield desired outputs from the model. Additionally, it showcases a targeted adversarial attack, where images are manipulated to resemble a specific target class, fooling the model into consistently predicting this class. The effectiveness of the attack is evaluated using a confusion matrix, highlighting the model's vulnerabilities.<br><a href="3. Mini Projects/Inversion and Adverserial Attack/Report.pdf">Report</a></p>
-
-
-<div style="margin: auto; width: 50%;">
-<table style="text-align: center;">
-    <tr>
-    <td><b>0</b></td>
-    <td><b>1</b></td>
-    <td><b>2</b></td>
-    <td><b>3</b></td>
-    <td><b>4</b></td>
-    <td><b>5</b></td>
-    <td><b>6</b></td>
-    <td><b>7</b></td>
-    <td><b>8</b></td>
-    <td><b>9</b></td>
-</tr>
-    <tr>
-        <td>858</td><td>0</td><td>4629</td><td>188</td><td>4</td><td>142</td><td>48</td><td>0</td><td>53</td><td>1</td>
-    </tr>
-    <tr>
-        <td>1</td><td>0</td><td>6692</td><td>37</td><td>0</td><td>0</td><td>0</td><td>6</td><td>6</td><td>0</td>
-    </tr>
-    <tr>
-        <td>36</td><td>53</td><td>5405</td><td>81</td><td>91</td><td>16</td><td>60</td><td>85</td><td>100</td><td>31</td>
-    </tr>
-    <tr>
-        <td>232</td><td>3</td><td>5009</td><td>385</td><td>12</td><td>102</td><td>236</td><td>7</td><td>135</td><td>10</td>
-    </tr>
-    <tr>
-        <td>16</td><td>4</td><td>5193</td><td>217</td><td>144</td><td>18</td><td>13</td><td>3</td><td>161</td><td>73</td>
-    </tr>
-    <tr>
-        <td>52</td><td>0</td><td>4173</td><td>963</td><td>7</td><td>53</td><td>53</td><td>8</td><td>89</td><td>23</td>
-    </tr>
-    <tr>
-        <td>31</td><td>0</td><td>5755</td><td>45</td><td>4</td><td>18</td><td>52</td><td>0</td><td>13</td><td>0</td>
-    </tr>
-    <tr>
-        <td>144</td><td>7</td><td>5686</td><td>95</td><td>8</td><td>58</td><td>47</td><td>21</td><td>63</td><td>136</td>
-    </tr>
-    <tr>
-        <td>35</td><td>3</td><td>5494</td><td>138</td><td>10</td><td>39</td><td>37</td><td>2</td><td>87</td><td>6</td>
-    </tr>
-    <tr>
-        <td>28</td><td>3</td><td>5362</td><td>390</td><td>108</td><td>6</td><td>0</td><td>33</td><td>12</td><td>7</td>
-    </tr>
-</table>
-<p>The following confusion matrix illustrates the effectiveness of the targeted attack on the model,
-which consistently predicts the inputs belonging to the <b>target class 2</b>.</p>
-</div>
-
-
-## Judging a Book by its Cover
-<p> The project develops a multi-modal model for a book cover dataset to predict book genres, combining BERT for text and ResNet for images. This approach effectively integrates textual and visual information in the latent space before final classification. The model achieved an impressive training accuracy of 92%, On the test data, the model's overall accuracy was 62%, with precision and recall averaging at 61%. 
-Despite the promising results on the training set, the significant gap between the training and testing accuracy suggests potential overfitting, where the model performs excellently on the training data but struggles to generalize to unseen data.
-<br><a href="3. Mini Projects/Judging a Book by its Cover/Report.pdf">Report</a></p>
-
 
 ## Artistic Image Enhancement and Color Transfer, Image Quantization
 <p> This assignment had three parts.
@@ -188,6 +129,67 @@ A basic GUI application was developed to effectively select n swatches from both
 
 <p>Below is the result of performing the Iterative SGD version of Neural Style Transfer on 'Girl with a Pearl Earring' painting.</p>
 <img src="3. Mini Projects/Neural Style Transfer/animation.webp" alt="Result Image" style="display:block; margin:auto;"/>
+
+
+## Judging a Book by its Cover
+<p> The project develops a multi-modal model for a book cover dataset to predict book genres, combining BERT for text and ResNet for images. This approach effectively integrates textual and visual information in the latent space before final classification. The model achieved an impressive training accuracy of 92%, On the test data, the model's overall accuracy was 62%, with precision and recall averaging at 61%. 
+Despite the promising results on the training set, the significant gap between the training and testing accuracy suggests potential overfitting, where the model performs excellently on the training data but struggles to generalize to unseen data.
+<br><a href="3. Mini Projects/Judging a Book by its Cover/Report.pdf">Report</a></p>
+
+
+## Inversion and Adverserial Attack
+<p> This project demonstrates neural network inversion and adversarial attacks on the MNIST dataset. It utilizes a simple sigmoid-based convolutional neural network (CNN) model trained on this dataset. The project employs image inversion through gradient descent to reconstruct input images that yield desired outputs from the model. Additionally, it showcases a targeted adversarial attack, where images are manipulated to resemble a specific target class, fooling the model into consistently predicting this class. The effectiveness of the attack is evaluated using a confusion matrix, highlighting the model's vulnerabilities.<br><a href="3. Mini Projects/Inversion and Adverserial Attack/Report.pdf">Report</a></p>
+
+
+<div style="margin: auto; width: 50%;">
+<table style="text-align: center;">
+    <tr>
+    <td><b>0</b></td>
+    <td><b>1</b></td>
+    <td><b>2</b></td>
+    <td><b>3</b></td>
+    <td><b>4</b></td>
+    <td><b>5</b></td>
+    <td><b>6</b></td>
+    <td><b>7</b></td>
+    <td><b>8</b></td>
+    <td><b>9</b></td>
+</tr>
+    <tr>
+        <td>858</td><td>0</td><td>4629</td><td>188</td><td>4</td><td>142</td><td>48</td><td>0</td><td>53</td><td>1</td>
+    </tr>
+    <tr>
+        <td>1</td><td>0</td><td>6692</td><td>37</td><td>0</td><td>0</td><td>0</td><td>6</td><td>6</td><td>0</td>
+    </tr>
+    <tr>
+        <td>36</td><td>53</td><td>5405</td><td>81</td><td>91</td><td>16</td><td>60</td><td>85</td><td>100</td><td>31</td>
+    </tr>
+    <tr>
+        <td>232</td><td>3</td><td>5009</td><td>385</td><td>12</td><td>102</td><td>236</td><td>7</td><td>135</td><td>10</td>
+    </tr>
+    <tr>
+        <td>16</td><td>4</td><td>5193</td><td>217</td><td>144</td><td>18</td><td>13</td><td>3</td><td>161</td><td>73</td>
+    </tr>
+    <tr>
+        <td>52</td><td>0</td><td>4173</td><td>963</td><td>7</td><td>53</td><td>53</td><td>8</td><td>89</td><td>23</td>
+    </tr>
+    <tr>
+        <td>31</td><td>0</td><td>5755</td><td>45</td><td>4</td><td>18</td><td>52</td><td>0</td><td>13</td><td>0</td>
+    </tr>
+    <tr>
+        <td>144</td><td>7</td><td>5686</td><td>95</td><td>8</td><td>58</td><td>47</td><td>21</td><td>63</td><td>136</td>
+    </tr>
+    <tr>
+        <td>35</td><td>3</td><td>5494</td><td>138</td><td>10</td><td>39</td><td>37</td><td>2</td><td>87</td><td>6</td>
+    </tr>
+    <tr>
+        <td>28</td><td>3</td><td>5362</td><td>390</td><td>108</td><td>6</td><td>0</td><td>33</td><td>12</td><td>7</td>
+    </tr>
+</table>
+<p>The following confusion matrix illustrates the effectiveness of the targeted attack on the model,
+which consistently predicts the inputs belonging to the <b>target class 2</b>.</p>
+</div>
+
 </br>
 <br>
 <br>
