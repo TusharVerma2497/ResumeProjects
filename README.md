@@ -34,7 +34,7 @@
 <img src="3. Mini Projects/GAN/GAN Adversarial_Learning.webp" alt="Result Image" style="display:block; margin:auto;"/>
 
 
-## Neural Colorization (gray to color image)
+## Conditional GAN for Neural Colorization (gray to color image)
 Neural colorization is a technique that uses neural networks, particularly convolutional neural networks (CNNs), to add color to grayscale images. Instead of manually adding color, the network learns to predict and generate realistic color distributions based on patterns, textures, and context within the image. 
 
 Using adversarial learning, we trained a conditional GAN on the Mini-ImageNet dataset. The generator is a U-Net model that colorizes grayscale images, conditioned on luminance values. It downscales and then upscales the image, with skip connections to retain spatial details, and includes self-attention in the decoder to capture long-range dependencies for more coherent colorization. The discriminator is a binary classifier that distinguishes real color images from generated ones, using downsampling convolutional layers to identify inconsistencies.
@@ -55,7 +55,7 @@ Below is the result of Neural Colorization.
 <img src="3. Mini Projects/Super-Resolution/SRGAN_results.jpg" alt="Result Image" style="display:block; margin: -10% auto 0; transform: rotate(90deg);width: 60%;"/>
 
 
-## Neural Style Transfer
+## Neural Style Transfer as an Optimization problem
 
 Neural Style Transfer (NST) is a technique in computer vision that combines the content of one image with the artistic style of another, producing a new image that retains the original content's structure while adopting stylistic elements. In this part, I also implemented NST from scratch using a pre-trained convolutional neural network (CNN), specifically VGG16. They extracted content features from the higher layers of the network and style features from the lower layers. The process involved optimizing a randomly initialized image by minimizing a loss function that balances content and style differences. 
 
@@ -120,11 +120,12 @@ which consistently predicts the inputs belonging to the <b>target class 2</b>.</
 
 
 ## Judging a Book by its Cover
-<p> The project develops a multi-modal model for a book cover dataset to predict book genres, combining BERT for text and ResNet for images, this effectively integrates
-textual and visual information in the latent space before final classification. The model achieved a training accuracy of 54%, with Class 15 performing best (precision 0.87, recall 0.95), while Class 21 struggled significantly (precision 0.35, recall 0.02). On test data, overall accuracy achieved was 48%, with an average precision and recall of 49%.<br><a href="3. Mini Projects/Judging a Book by its Cover/Report.pdf">Report</a></p>
+<p> The project develops a multi-modal model for a book cover dataset to predict book genres, combining BERT for text and ResNet for images. This approach effectively integrates textual and visual information in the latent space before final classification. The model achieved an impressive training accuracy of 92%, On the test data, the model's overall accuracy was 62%, with precision and recall averaging at 61%. 
+Despite the promising results on the training set, the significant gap between the training and testing accuracy suggests potential overfitting, where the model performs excellently on the training data but struggles to generalize to unseen data.
+<br><a href="3. Mini Projects/Judging a Book by its Cover/Report.pdf">Report</a></p>
 
 
-## Artistic Image Enhancement and Style Transfer, Image Quantization
+## Artistic Image Enhancement and Color Transfer, Image Quantization
 <p> This assignment had three parts.
 <br><a href="3. Mini Projects/Judging a Book by its Cover/Report.pdf">Report</a>
 
