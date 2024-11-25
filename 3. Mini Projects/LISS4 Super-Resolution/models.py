@@ -3,46 +3,6 @@ import torch
 from torch import nn
 
 
-# class Generator(nn.Module):
-#     def __init__(self, scale_factor, in_channels =3):
-#         upsample_block_num = int(math.log(scale_factor, 2))
-
-#         super(Generator, self).__init__()
-#         self.block1 = nn.Sequential(
-#             nn.Conv2d(in_channels, 64, kernel_size=9, padding=4),
-#             nn.PReLU()
-#         )
-#         self.block2 = ResidualBlock(64)
-#         self.block3 = ResidualBlock(64)
-#         self.block4 = ResidualBlock(64)
-#         self.block5 = ResidualBlock(64)
-#         self.block6 = ResidualBlock(64)
-#         self.block7 = nn.Sequential(
-#             nn.Conv2d(64, 64, kernel_size=3, padding=1),
-#             nn.BatchNorm2d(64)
-#         )
-#         block8 = [UpsampleBLock(64, 2) for _ in range(upsample_block_num)]
-#         self.block8 = nn.Sequential(*block8)
-#         self.final_layer = nn.Conv2d(64, 3, kernel_size=9, padding=4)
-
-#     def forward(self, x, return_dense = False):
-#         block1 = self.block1(x)
-#         block2 = self.block2(block1)
-#         block3 = self.block3(block2)
-#         block4 = self.block4(block3)
-#         block5 = self.block5(block4)
-#         block6 = self.block6(block5)
-#         block7 = self.block7(block6)
-#         block8 = self.block8(block1 + block7)
-#         out = self.final_layer(block8)
-        
-#         if(return_dense):
-#             return (torch.tanh(out) + 1) / 2, block8
-#         return (torch.tanh(out) + 1) / 2
-
-
-
-
 class Generator(nn.Module):
     def __init__(self, scale_factor, in_channels =3, maskOutput=False):
         upsample_block_num = int(math.log(scale_factor, 2))
