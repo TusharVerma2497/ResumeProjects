@@ -54,7 +54,7 @@ Below is the result of Neural Colorization.
 
 <img src="3. Mini Projects/Super-Resolution/SRGAN_results.jpg" alt="Result Image" style="display:block; margin: -10% auto 0; transform: rotate(90deg);width: 60%;"/> -->
 
-## ISRO's LISS4 Upsampling for Enhanced Visualization
+## ISRO's LISS4 4X Super-Resolution for Enhanced Visualization
 
 This project focused on upscaling ISRO’s LISS-4 imagery (5.8m/pixel) by 4x using custom dense SRGAN architecture, achieving a target resolution of 1.445m/pixel. High-Resolution satellite imagery (0.6m/pixel) was used as Ground Truth, since it was originally 0.6m/pixel we downsampled it to 1.445m/pixel for alignment. The model trained on R, G, and NIR input bands with R, G, and B as targets demonstrated significant visual and statistical improvements, achieving enhanced spatial detail and better distribution alignment between inputs and targets showcasing successful domain adaptation. Challenges included addressing cloud interference and modeling urban complexities. Future efforts will explore advanced pre-processing, multi-scale modeling, and expanded datasets to enhance accuracy and applicability across varied domains.
 <br><a href="3. Mini Projects/LISS4 Super-Resolution/Report.pdf">Report</a>​</p>
