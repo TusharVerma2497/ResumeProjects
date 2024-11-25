@@ -26,12 +26,6 @@
 
 # MINI PROJECTS
 
-## GAN
-<p> In this project, a Generative Adversarial Network (GAN) was implemented from scratch to generate images using the CIFAR-10 dataset. The architecture featured a generator that produces images from random noise and a discriminator that classifies them as real or fake. The model included batch normalization and LeakyReLU layers, with an Inception Score of 3.5, indicating moderate image quality and diversity. While the model performed reasonably well, there is room for improvement in terms of image sharpness and variety across classes.<br><a href="3. Mini Projects/GAN/Report.pdf">Report</a></p>
-
-<!-- ### Result Image -->
-
-<img src="3. Mini Projects/GAN/GAN Adversarial_Learning.webp" alt="Result Image" style="display:block; margin:auto;"/>
 
 
 ## Conditional GAN for Neural Colorization (gray to color image)
@@ -47,13 +41,20 @@ Below is the result of Neural Colorization.
 <img src="3. Mini Projects/Neural Colorization/colorization2.jpg" alt="Result Image" style="display:block; margin:auto;"/>
 
 
+## GAN
+<p> In this project, a Generative Adversarial Network (GAN) was implemented from scratch to generate images using the CIFAR-10 dataset. The architecture featured a generator that produces images from random noise and a discriminator that classifies them as real or fake. The model included batch normalization and LeakyReLU layers, with an Inception Score of 3.5, indicating moderate image quality and diversity. While the model performed reasonably well, there is room for improvement in terms of image sharpness and variety across classes.<br><a href="3. Mini Projects/GAN/Report.pdf">Report</a></p>
+
+<!-- ### Result Image -->
+
+<img src="3. Mini Projects/GAN/GAN Adversarial_Learning.webp" alt="Result Image" style="display:block; margin:auto;"/>
+
 <!-- ## Super-Resolution
 <p> In this project, a Super Resolution Generative Adversarial Network (SRGAN) was implemented to upsample satellite images. The model enhances image resolution while preserving texture and detail. The architecture consists of a generator using convolutional layers and residual blocks for upsampling and a discriminator that classifies images as real or fake. Loss functions like adversarial, perceptual, and total variation losses were combined to improve image quality. The SRGAN effectively generates high-resolution satellite images, enabling better interpretation of geographical features and improving the utility of satellite data.<br><a href="3. Mini Projects/Super-Resolution/Report.pdf">Report</a></p>
 
 
 <img src="3. Mini Projects/Super-Resolution/SRGAN_results.jpg" alt="Result Image" style="display:block; margin: -10% auto 0; transform: rotate(90deg);width: 60%;"/> -->
 
-## ISRO's LISS4 Upsampling for Visual Enhancement
+## ISRO's LISS4 Upsampling for Enhanced Visualization
 
 This project focused on upscaling ISRO’s LISS-4 imagery (5.8m/pixel) by 4x using custom dense SRGAN architecture, achieving a target resolution of 1.445m/pixel. Google Maps Zoom 18 data was used as target, since it was originally 0.6m/pixel we downsampled it to 1.445m/pixel for alignment. The model trained on R, G, and NIR input bands with R, G, and B as targets demonstrated significant visual and statistical improvements, achieving enhanced spatial detail and better distribution alignment between inputs and targets showcasing successful domain adaptation. Challenges included addressing cloud interference and modeling urban complexities. Future efforts will explore advanced pre-processing, multi-scale modeling, and expanded datasets to enhance accuracy and applicability across varied domains.
 <br><a href="3. Mini Projects/LISS4 Super-Resolution/Report.pdf">Report</a>​</p>
@@ -69,6 +70,7 @@ Neural Style Transfer (NST) is a technique in computer vision that combines the 
 <img src="3. Mini Projects/Neural Style Transfer/example2.jpg" alt="Result Image" style="display:block; margin:auto;"/>
 </br>
 <img src="3. Mini Projects/Neural Style Transfer/animation2.gif" alt="Result Image" style="display:block; margin:auto;"/>
+
 
 
 ## Artistic Image Enhancement and Color Transfer, Image Quantization
