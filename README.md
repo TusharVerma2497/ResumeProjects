@@ -47,13 +47,18 @@ Below is the result of Neural Colorization.
 <img src="3. Mini Projects/Neural Colorization/colorization2.jpg" alt="Result Image" style="display:block; margin:auto;"/>
 
 
-## Super-Resolution
+<!-- ## Super-Resolution
 <p> In this project, a Super Resolution Generative Adversarial Network (SRGAN) was implemented to upsample satellite images. The model enhances image resolution while preserving texture and detail. The architecture consists of a generator using convolutional layers and residual blocks for upsampling and a discriminator that classifies images as real or fake. Loss functions like adversarial, perceptual, and total variation losses were combined to improve image quality. The SRGAN effectively generates high-resolution satellite images, enabling better interpretation of geographical features and improving the utility of satellite data.<br><a href="3. Mini Projects/Super-Resolution/Report.pdf">Report</a></p>
 
-<!-- ### Result Image -->
 
-<img src="3. Mini Projects/Super-Resolution/SRGAN_results.jpg" alt="Result Image" style="display:block; margin: -10% auto 0; transform: rotate(90deg);width: 60%;"/>
+<img src="3. Mini Projects/Super-Resolution/SRGAN_results.jpg" alt="Result Image" style="display:block; margin: -10% auto 0; transform: rotate(90deg);width: 60%;"/> -->
 
+## ISRO's LISS4 Upsampling for Visual Enhancement
+
+This project focused on upscaling ISRO’s LISS-4 imagery (5.8m/pixel) by 4x using custom dense SRGAN architecture, achieving a target resolution of 1.445m/pixel. Google Maps Zoom 18 data was used as target, since it was originally 0.6m/pixel we downsampled it to 1.445m/pixel for alignment. The model trained on R, G, and NIR input bands with R, G, and B as targets demonstrated significant visual and statistical improvements, achieving enhanced spatial detail and better distribution alignment between inputs and targets showcasing successful domain adaptation. Challenges included addressing cloud interference and modeling urban complexities. Future efforts will explore advanced pre-processing, multi-scale modeling, and expanded datasets to enhance accuracy and applicability across varied domains.
+<br><a href="3. Mini Projects/LISS4 Super-Resolution/Report.pdf">Report</a>​</p>
+
+<img src="3. Mini Projects/LISS4 Super-Resolution/Results.webp" alt="Result Image" />
 
 ## Neural Style Transfer as an Optimization problem
 
